@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const scores = [45, 80, 90, 35, 60, 75];
+
+
+const passingScores = scores.filter(score => score >= 50);
+
+
+const bonusScores = passingScores.map(score => score + 10);
+
+
+const totalScore = bonusScores.reduce((total, score) => total + score, 0);
+
+console.log("Original Scores:", scores);
+console.log("Passing Scores (>=50):", passingScores);
+console.log("After Adding 10 Bonus Marks:", bonusScores);
+console.log("Total Score:", totalScore);
+    </script>
+</body>
+</html>
